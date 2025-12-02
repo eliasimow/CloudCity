@@ -1,8 +1,3 @@
-# Final Project!
-
-This is it! The culmination of your procedural graphics experience this semester. For your final project, we'd like to give you the time and space to explore a topic of your choosing. You may choose any topic you please, so long as you vet the topic and scope with an instructor or TA. We've provided some suggestions below. The scope of your project should be roughly 1.5 homework assignments). To help structure your time, we're breaking down the project into 4 milestones:
-
-## Project planning: Design Doc (due 11/5)
 ### Design Doc
 #### Introduction
 We’re excited by the idea of procedurally generating assets that can amplify the visual impact of our GPU final project, real time cloud generation. Because a big focus of that final project is collisions, we’d like to make assets here that can highlight that functionality. We think that floating cloud rocks and foliage, and procedurally animated fauna flying between those assets and the GPU clouds, would look incredible!
@@ -83,67 +78,25 @@ https://github.com/user-attachments/assets/4376d492-bd75-4e5d-bad1-ffc780beb52b
 
 WIP bridge creation
 
+## Final Version Overview
 
-## Final submission (due 12/1)
-Time to polish! Spen this last week of your project using your generator to produce beautiful output. Add textures, tune parameters, play with colors, play with camera animation. Take the feedback from class critques and use it to take your project to the next level.
+<img width="2128" height="1321" alt="image" src="https://github.com/user-attachments/assets/58b3c717-26d6-416f-baed-b76abccb329f" />
 
-Submission:
-- Push all your code / files to your repository
-- Come to class ready to present your finished project
-- Update your README with two sections 
-  - final results with images and a live demo if possible
-  - post mortem: how did your project go overall? Did you accomplish your goals? Did you have to pivot?
 
-## Topic Suggestions
+For our procedural final project, we have constructed a highly dynamic set of art assets for use in constructing a decayed cloud city. The scene is composed of four pieces, each of which is configurable and parameterized. The pieces are as follows:
 
-### Create a generator in Houdini
+- Floating Islands. These are the centerpiece of the scene, and can be made to fit any arbitrary size the artist desires. Procedural moss grows along the islands' rocky underbellies. Simulated grass and weeds flow in the wind as the render progresses.
 
-### A CLASSIC 4K DEMO
-- In the spirit of the demo scene, create an animation that fits into a 4k executable that runs in real-time. Feel free to take inspiration from the many existing demos. Focus on efficiency and elegance in your implementation.
-- Example: 
-  - [cdak by Quite & orange](https://www.youtube.com/watch?v=RCh3Q08HMfs&list=PLA5E2FF8E143DA58C)
+- Molded Rope Bridges. These can be set to join any two arbitrary points in space, connecting islands across any distance and height. Decay level can be set, which dictates the bridge's number of remaining planks and the sag of the parabola.
 
-### A RE-IMPLEMENTATION
-- Take an academic paper or other pre-existing project and implement it, or a portion of it.
-- Examples:
-  - [2D Wavefunction Collapse Pokémon Town](https://gurtd.github.io/566-final-project/)
-  - [3D Wavefunction Collapse Dungeon Generator](https://github.com/whaoran0718/3dDungeonGeneration)
-  - [Reaction Diffusion](https://github.com/charlesliwang/Reaction-Diffusion)
-  - [WebGL Erosion](https://github.com/LanLou123/Webgl-Erosion)
-  - [Particle Waterfall](https://github.com/chloele33/particle-waterfall)
-  - [Voxelized Bread](https://github.com/ChiantiYZY/566-final)
+- Decayed Walls. Artist's can use the Houdini pen tool to draw out a section of the wall that has crumbled over the decades; bricks will be broken and half and sheared off by this border. Remaining bricks are still decayed by a noise boolean union effect.
 
-### A FORGERY
-Taking inspiration from a particular natural phenomenon or distinctive set of visuals, implement a detailed, procedural recreation of that aesthetic. This includes modeling, texturing and object placement within your scene. Does not need to be real-time. Focus on detail and visual accuracy in your implementation.
-- Examples:
-  - [The Shrines](https://github.com/byumjin/The-Shrines)
-  - [Watercolor Shader](https://github.com/gracelgilbert/watercolor-stylization)
-  - [Sunset Beach](https://github.com/HanmingZhang/homework-final)
-  - [Sky Whales](https://github.com/WanruZhao/CIS566FinalProject)
-  - [Snail](https://www.shadertoy.com/view/ld3Gz2)
-  - [Journey](https://www.shadertoy.com/view/ldlcRf)
-  - [Big Hero 6 Wormhole](https://2.bp.blogspot.com/-R-6AN2cWjwg/VTyIzIQSQfI/AAAAAAAABLA/GC0yzzz4wHw/s1600/big-hero-6-disneyscreencaps.com-10092.jpg)
+- Boids. A flock of seagulls flies back and forth between islands. They are motivated by a set of force principles: to chase the center of the pack, to avoid collision with each other, and to avoid collision with the islands. The seagull model is sourced from https://www.turbosquid.com/Search/Artists/msurguy
 
-### A GAME LEVEL
-- Like generations of game makers before us, create a game which generates an navigable environment (eg. a roguelike dungeon, platforms) and some sort of goal or conflict (eg. enemy agents to avoid or items to collect). Aim to create an experience that will challenge players and vary noticeably in different playthroughs, whether that means procedural dungeon generation, careful resource management or an interesting AI model. Focus on designing a system that is capable of generating complex challenges and goals.
-- Examples:
-  - [Rhythm-based Mario Platformer](https://github.com/sgalban/platformer-gen-2D)
-  - [Pokémon Ice Puzzle Generator](https://github.com/jwang5675/Ice-Puzzle-Generator)
-  - [Abstract Exploratory Game](https://github.com/MauKMu/procedural-final-project)
-  - [Tiny Wings](https://github.com/irovira/TinyWings)
-  - Spore
-  - Dwarf Fortress
-  - Minecraft
-  - Rogue
+## Post Mortem
 
-### AN ANIMATED ENVIRONMENT / MUSIC VISUALIZER
-- Create an environment full of interactive procedural animation. The goal of this project is to create an environment that feels responsive and alive. Whether or not animations are musically-driven, sound should be an important component. Focus on user interactions, motion design and experimental interfaces.
-- Examples:
-  - [The Darkside](https://github.com/morganherrmann/thedarkside)
-  - [Music Visualizer](https://yuruwang.github.io/MusicVisualizer/)
-  - [Abstract Mesh Animation](https://github.com/mgriley/cis566_finalproj)
-  - [Panoramical](https://www.youtube.com/watch?v=gBTTMNFXHTk)
-  - [Bound](https://www.youtube.com/watch?v=aE37l6RvF-c)
+<img width="2251" height="1267" alt="image" src="https://github.com/user-attachments/assets/7b530122-e3eb-4ea8-b6b7-2c5adfa3fa42" />
 
-### YOUR OWN PROPOSAL
-- You are of course welcome to propose your own topic . Regardless of what you choose, you and your team must research your topic and relevant techniques and come up with a detailed plan of execution. You will meet with some subset of the procedural staff before starting implementation for approval.
+
+Overall, we really enjoyed working on this project! We reacted quickly to changing conditions to readjust scope, and that avoided some potential pitfalls that could have led to a less complete final project. The choice to complete the overall experience in Houdini first was the correct one, as we simply didn't have the time to port it over to GPU for our final experience. 
+
