@@ -80,6 +80,9 @@ WIP bridge creation
 
 ## Final Version Overview
 
+<img width="2128" height="1321" alt="image" src="https://github.com/user-attachments/assets/58b3c717-26d6-416f-baed-b76abccb329f" />
+
+
 For our procedural final project, we have constructed a highly dynamic set of art assets for use in constructing a decayed cloud city. The scene is composed of four pieces, each of which is configurable and parameterized. The pieces are as follows:
 
 - Floating Islands. These are the centerpiece of the scene, and can be made to fit any arbitrary size the artist desires. Procedural moss grows along the islands' rocky underbellies. Simulated grass and weeds flow in the wind as the render progresses.
@@ -91,6 +94,9 @@ For our procedural final project, we have constructed a highly dynamic set of ar
 - Boids. A flock of seagulls flies back and forth between islands. They are motivated by a set of force principles: to chase the center of the pack, to avoid collision with each other, and to avoid collision with the islands. The seagull model is sourced from https://www.turbosquid.com/Search/Artists/msurguy
 
 ## Post Mortem
+
+<img width="2251" height="1267" alt="image" src="https://github.com/user-attachments/assets/7b530122-e3eb-4ea8-b6b7-2c5adfa3fa42" />
+
 
 Overall, we really enjoyed working on this project! We reacted quickly to changing conditions to readjust scope, and that avoided some potential pitfalls that could have led to a less complete final project. The choice to complete the overall experience in Houdini first was the correct one, as we simply didn't have the time to port it over to GPU for our final experience. 
 
